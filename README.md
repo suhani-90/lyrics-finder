@@ -1,40 +1,55 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+# Simple Lyrics Finder - Interview Task Demo
 
-First, run the development server:
+This is a simple web application built which allows users to search for song lyrics by Artist and Title using the free `lyrics.ovh` API and displays the results.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The project focuses on demonstrating core frontend concepts using Next.js and deploying a static site to AWS S3.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Features:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+*   Search for lyrics by Artist and Song Title.
+*   Fetches lyrics from the `lyrics.ovh` public API.
+*   Displays fetched lyrics with preserved formatting.
+*   Includes a loading indicator during API calls.
+*   Handles and displays basic errors (e.g., song not found, network issues).
+*   Provides user hints for better search results.
+*   Basic responsive design with improved styling for a better user experience.
+*   Built for static export and deployment.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Tech Stack
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+*   **Framework:** Next.js (v13+ with Pages Router configured for static export)
+*   **Language:** JavaScript (ES6+)
+*   **UI Library:** React
+*   **Styling:** CSS Modules
+*   **API:** `lyrics.ovh` (Public, free)
+*   **Deployment:** AWS S3 Static Website Hosting
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## API Used
 
-To learn more about Next.js, take a look at the following resources:
+*   **lyrics.ovh API:** This project relies on the free, public API provided by `lyrics.ovh`.
+*   **Documentation:** [https://lyricsovh.docs.apiary.io/](https://lyricsovh.docs.apiary.io/)
+*   **Limitations:** As a free service, it may have rate limits, occasional downtime, or incomplete lyrics data.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Example Searches
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Here are a few examples that generally work well with the `lyrics.ovh` API (remember to check spelling!):
 
-## Deploy on Vercel
+*   Artist: `Queen`
+    Title: `Bohemian Rhapsody`
+*   Artist: `The Beatles`
+    Title: `Hey Jude`
+*   Artist: `Coldplay`
+    Title: `Yellow`
+*   Artist: `Adele`
+    Title: `Hello`
+*   Artist: `Eagles`
+    Title: `Hotel California`
+*   Artist: `Nirvana`
+    Title: `Smells Like Teen Spirit`
+*   Artist: `Oasis`
+    Title: `Wonderwall`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Thank you for reviewing this demo project!
