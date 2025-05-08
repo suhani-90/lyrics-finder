@@ -158,3 +158,29 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* Add/Update these styles in styles/Home.module.css */
+
+.lyricsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.lyricsHeader h2 {
+  margin-bottom: 0;
+  margin-right: 1rem;
+  color: #0f766e;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.sourceIndicator {
+  font-size: 0.8rem;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 0.5rem; /* Adjusted */
+  font-style: italic;
+}
