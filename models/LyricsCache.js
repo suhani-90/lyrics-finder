@@ -1,4 +1,4 @@
-// models/LyricsCache.js
+//models/LyricsCache.js
 import mongoose from 'mongoose';
 
 const LyricsCacheSchema = new mongoose.Schema({
@@ -21,8 +21,6 @@ const LyricsCacheSchema = new mongoose.Schema({
   fetchedAt: {
     type: Date,
     default: Date.now,
-    // Optional: Add TTL index to auto-expire old cache entries
-    // expires: '30d', // e.g., expire after 30 days
   },
   sourceApi: {
     type: String,
@@ -30,7 +28,6 @@ const LyricsCacheSchema = new mongoose.Schema({
   },
 });
 
-// Unique compound index for artist+title to prevent duplicates and speed up lookups
+// compound index for artist+title
 LyricsCacheSchema.index({ artist: 1, title: 1 }, { unique: true });
-
 export default mongoose.models.LyricsCache || mongoose.model('LyricsCache', LyricsCacheSchema);
