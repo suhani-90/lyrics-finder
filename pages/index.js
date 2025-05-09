@@ -56,7 +56,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Lyrics Finder (DB Cached)</title>
+        <title>Lyrics Finder</title>
         <meta name="description" content="Find song lyrics with database caching" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
