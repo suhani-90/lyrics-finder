@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-# Simple Lyrics Finder - Interview Task Demo
+# Simple Lyrics Finder
 
 This is a simple web application built which allows users to search for song lyrics by Artist and Title using the free `lyrics.ovh` API and displays the results.
 
