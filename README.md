@@ -3,8 +3,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 # Simple Lyrics Finder
 
 This is a simple web application built which allows users to search for song lyrics by Artist and Title using the free `lyrics.ovh` API and displays the results.
-
-The project focuses on demonstrating core frontend concepts using Next.js and deploying a static site to AWS S3.
+Live demo : https://lyrics-finder-ybv5.vercel.app/
 
 Features:
 
@@ -52,4 +51,3 @@ Here are a few examples that generally work well with the `lyrics.ovh` API (reme
 *   Artist: `Oasis`
     Title: `Wonderwall`
 
-Thank you for reviewing this demo project!
